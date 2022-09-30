@@ -1,6 +1,6 @@
 module.exports = [
     {
-      context: [ '/api/**' ], //match these request
+      context: [ '/**' ], //match these request
       target: 'http://localhost:8080', //SpringBoot!
       secure: false
     }
