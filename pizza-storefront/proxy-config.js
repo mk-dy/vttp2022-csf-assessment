@@ -1,7 +1,7 @@
 module.exports = [
     {
       context: [ '/**' ], //match these request
-      target: 'https://immense-retreat-82754.herokuapp.com', //SpringBoot!
+      target: 'http://localhost:8080', //SpringBoot!
       secure: false
     }
   ]
