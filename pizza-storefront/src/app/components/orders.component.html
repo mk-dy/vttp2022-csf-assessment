@@ -1,0 +1,28 @@
+<!--
+  IMPORTANT: Do not modify this HTML except when you are adding form directives 
+-->
+<h3>Orders for {{ email }}</h3>
+<div>
+    
+    <table>
+        <thead>
+            <th>Order Id</th>
+            <th>Amount</th>
+        </thead>
+        <tr *ngFor="let o of orders">
+            <td>{{ o.orderId }}</td>
+            <td>{{ o.amount | currency }} </td>
+        </tr>
+    </table>  
+    <!-- <table *ngFor="let o of orders">
+        <tr>
+            {{ o.orderId }}
+        </tr>
+        <tr>
+            {{ o.amount | currency }}
+        </tr>
+    </table>   -->
+</div>
+
+<button [routerLink]="['/']">Back</button>
+  
